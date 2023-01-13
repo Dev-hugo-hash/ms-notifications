@@ -20,6 +20,7 @@ model Notification {
   category    String
   //pode ser nulo
   readAt      DateTime?
+  canceledAt  DateTime?
   createdAt   DateTime  @default(now())
 
   //Chave extrangeira
